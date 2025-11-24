@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>나라 소개  웹페이지지</title>
+    <title>나라 소개  웹페이지</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,14 +14,16 @@
     <script>
         function checkname() {
             let name = document.getElementById("yourname").value;
-             alert(name + "아/야 안녕~ 헝가리를 소개해볼께");
+             alert(name + "씨, 안녕하세여~ 헝가리를 소개해볼께여");
         }
         
           </script> 
     <h2>Hungary</h2>
     <p>이름: 헝가리</p>
     <p>위치: 동유럽</p>
-    <p>유명한 곳: 국회 의사당, 어부의 요새</p>
+    <p>인구: 약 960만명</p>
+    <p>시차: 7~8시간 느림</p>
+    <p> </p>
     <h2>관광 명소</h2>
     <ul>
       <li>국회의사당</li>
@@ -41,33 +43,12 @@
         }
     </script>
 
-     <p><input id="myAge" type="number"></p>
-    <button onclick="checkAge()">나이확인</button>
-
     <script>
-        function checkAge() {
-            let age = document.getElementById("myAge").value;
-
-            if (age >= 20) {
-                alert("성인")
-            } else if (age = 16) {
-                alert("저랑 동갑이네요")
-            }
-             else
-                alert("청소년")
-
-        }
-            
-    </script>
-
-
-
-<script>
     let games = ["한국", "프랑스", "헝가리"];
     for (let i = 0; i < games.length; i++) {
         alert("제가 좋아하는 나라는? 바로 " + games[i]);
     }
-</script>
+    </script>
 <p>  </p>
 <button onclick="likes()">헝가리에 대해서</button>
 
@@ -79,6 +60,47 @@ function likes() {
 }
 </script>
 
+<h1>나만의 텍스트 게임</h1>
+<button onclick="startGame()">게임 시작</button>
+   
+
+<script>
+function startGame() {
+   alert("지금부터 헝가리에 대한 퀴즈를 내볼께요~!");
+   alert("1번! 헝가리의 위치는?")
+   
+   var coorido = prompt ("1. 남아메리카 2. 동유럽 3. 서유럽 (1/2/3)");
+   if (coorido === "2") {
+       Answer1();
+   } else {
+       Wrong();
+   }
+}
+  function Wrong() {
+    var wrong = alert("아쉽네요.. 틀렸어요")
+  }
+
+  function Answer1() {
+  var answer1 = alert("정답입니다! 다음 문제~")
+  alert("2번! 헝가리의 인구는?")
+  prompt("1. 약 980만명 2. 약 860만명 3. 약 960만명 (1/2/3)")
+  if (answer1 === "3") {
+       Answer2();
+   } else {
+       Wrong();
+   }
+  }
+
+  function Answer2() {
+    var answer2 = alert("정답! 마지막 문제!")
+    prompt("헝가리를 영어로 직접 써보세요! (맨 앞에는 대문자!)")
+    if (answer2 === "Hungary") {
+       alert("대단해요!! 헝가리 전문가 다 됬네요~")
+   } else {
+       Wrong();
+   }
+  }
+</script>
 </body>
 </html>
 
