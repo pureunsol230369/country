@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나라 소개  웹페이지지</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>헝가리</h1>
+
+    <p>이름 입력: <input id="yourname" type="text"></p>
+    <button onclick="checkname()">인사!</button>
+    <script>
+        function checkname() {
+            let name = document.getElementById("yourname").value;
+             alert(name + "아/야 안녕~ 헝가리를 소개해볼께");
+        }
+        
+          </script> 
+    <h2>Hungary</h2>
+    <p>이름: 헝가리</p>
+    <p>위치: 동유럽</p>
+    <p>유명한 곳: 국회 의사당, 어부의 요새</p>
+    <h2>관광 명소</h2>
+    <ul>
+      <li>국회의사당</li>
+     <li>어부의 요새</li>
+    </ul>
+    <h2>국기 사진</h2>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAT4AAACfCAMAAABX0UX9AAAAD1BMVEX////NKj5Db03JACAoYDZM/UaeAAABBElEQVR4nO3QSQ2AAADEwOXwrxkRfQDJjIKmOwj2dsC/2ZfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl9iX2JfYl+wiGAAAAAAAAAAAAAAAAAAAAACfcRPsJLAvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL7EvsS+xL3kAmYrKe5pXC3kAAAAASUVORK5CYII=" width="300">
+    <p> </p>
+    <button onclick="introduce()">나라 정보 보기</button>
+    <script>
+        function introduce() {
+            let where = "동유럽";
+            let pepole = "약 960만 명";
+            let time = "7~8시간 느려";
+    
+            alert("인녕하세요~, 헝가리는 " + where + "에 위치해있고요, 인구는 " + people + " 정도이고, 시차는 " + time + "요~");
+        }
+    </script>
+
+     <p><input id="myAge" type="number"></p>
+    <button onclick="checkAge()">나이확인</button>
+
+    <script>
+        function checkAge() {
+            let age = document.getElementById("myAge").value;
+
+            if (age >= 20) {
+                alert("성인")
+            } else if (age = 16) {
+                alert("저랑 동갑이네요")
+            }
+             else
+                alert("청소년")
+
+        }
+            
+    </script>
+
+
+
+<script>
+    let games = ["한국", "프랑스", "헝가리"];
+    for (let i = 0; i < games.length; i++) {
+        alert("제가 좋아하는 나라는? 바로 " + games[i]);
+    }
+</script>
+<p>  </p>
+<button onclick="likes()">헝가리에 대해서</button>
+
+<script>
+function likes() {
+    alert("음식, 굴라쉬를 만들었다!");
+    alert("루빅스 큐브를 만들었다!");
+    
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
